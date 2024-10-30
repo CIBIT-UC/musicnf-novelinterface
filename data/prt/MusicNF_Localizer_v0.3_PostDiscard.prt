@@ -1,0 +1,90 @@
+
+FileVersion:		2 
+
+ResolutionOfTime:	Volumes 
+
+Experiment:			MusicNF_Localizer 
+
+BackgroundColor:	0  0  0 
+TextColor:			255  255  255 
+
+TimeCourseColor:	1  1  1 
+TimeCourseThick:	3 
+ReferenceFuncColor:	0   0  80 
+ReferenceFuncThick:	2 
+
+NrOfConditions:		6 
+ 
+Rest 
+9 
+1	8 
+41	48 
+81	88 
+121	128 
+161	168 
+201	208 
+241	248 
+281	288 
+321	328 
+Color:	216 83 25 
+
+MotorImagery 
+8 
+9	16 
+49	56 
+89	96 
+129	136 
+169	176 
+209	216 
+249	256 
+289	296 
+Color:	236 177 32 
+
+Noise 
+8 
+17	24 
+57	64 
+97	104 
+137	144 
+177	184 
+217	224 
+257	264 
+297	304 
+Color:	110 115 190 
+
+Music 
+8 
+25	32 
+65	72 
+105	112 
+145	152 
+185	192 
+225	232 
+265	272 
+305	312 
+Color:	150 83 25 
+
+Report 
+8 
+33	36 
+73	76 
+113	116 
+153	156 
+193	196 
+233	236 
+273	276 
+313	316 
+Color:	190 177 32 
+
+Inter 
+8 
+37	40 
+77	80 
+117	120 
+157	160 
+197	200 
+237	240 
+277	280 
+317	320 
+Color:	150 115 190 
+
