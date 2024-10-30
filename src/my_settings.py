@@ -43,6 +43,9 @@ def settings():
     settings["bids_path"] = "/Volumes/T7/BIDS-MUSICNF"
     settings["derivatives_path"] = "/Volumes/T7/BIDS-MUSICNF/derivatives/fmriprep24"
     settings["out_glm_path"] = "/Volumes/T7/BIDS-MUSICNF/derivatives/nilearn-glm"
+    settings["out_glm_group_path"] = (
+        "/Volumes/T7/BIDS-MUSICNF/derivatives/nilearn-glm-group"
+    )
     settings["space_label"] = "MNI152NLin2009cAsym"
     settings["sub_labels"] = sub_labels
     settings["run_labels"] = run_labels

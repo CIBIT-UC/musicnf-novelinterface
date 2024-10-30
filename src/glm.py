@@ -1,8 +1,10 @@
 # Imports
 import os
+import glob
 import numpy as np
 import pandas as pd
 from nilearn.glm.first_level import FirstLevelModel
+from nilearn.glm.second_level import SecondLevelModel
 from nilearn.plotting import plot_design_matrix
 from src.my_settings import settings
 
@@ -131,3 +133,71 @@ def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list
                     f"sub-{sub_label}_task-{task_label}_stat-beta_con-{contrast_renamed_list[ii]}.nii.gz",
                 )
             )
+
+
+def secondlevel(settings, task_label, contrast_renamed_list):
+    """
+    Perform second-level GLM analysis on fMRI data for specified contrasts.
+
+    Parameters:
+    - settings (dict): Configuration settings containing paths and other parameters.
+    - task_label (str): Label for the task being analyzed.
+    - contrast_renamed_list (list): List of renamed contrasts for which the second-level analysis is performed.
+
+    Returns:
+    None
+
+    This function performs the following steps:
+    1. Iterates over the list of renamed contrasts.
+    2. For each contrast, lists all first-level z-map files corresponding to the contrast.
+    3. Prints the number of z-map files found.
+    4. Creates a design matrix for the second-level analysis.
+    5. Defines and fits a second-level GLM model using the z-map files and the design matrix.
+    6. Computes the contrast (z-score map) for the second-level analysis.
+    """
+    # Iterate on the contrast list
+    for contrast_name in contrast_renamed_list:
+
+        print(f"Running 2nd level for contrast {contrast_name}")
+
+        # List all zmap nii.gz files
+        zmap_files = glob.glob(
+            os.path.join(
+                settings["out_glm_path"],
+                f"sub-*_task-{task_label}_stat-z_con-{contrast_name}.nii.gz",
+            )
+        )
+        zmap_files.sort()
+
+        # print number of zmap files
+        print(f"Number of zmap files: {len(zmap_files)}")
+
+        # create design matrix for 2nd level
+        design_matrix_g = pd.DataFrame(
+            [1] * len(zmap_files),
+            columns=["intercept"],
+        )
+
+        # define 2nd level model
+        second_level_model = SecondLevelModel(smoothing_fwhm=8.0, n_jobs=3)
+
+        second_level_model = second_level_model.fit(
+            zmap_files,
+            design_matrix=design_matrix_g,
+        )
+
+        # compute contrast (z score map)
+        z_map_g = second_level_model.compute_contrast(
+            second_level_contrast="intercept",
+            output_type="z_score",
+        )
+
+        # save group map
+        z_map_g.to_filename(
+            os.path.join(
+                settings["out_glm_group_path"],
+                f"group_task-{task_label}_stat-z_con-{contrast_name}.nii.gz",
+            )
+        )
+
+        print(f"Finished 2nd level for contrast {contrast_name}")
