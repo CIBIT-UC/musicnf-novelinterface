@@ -8,9 +8,6 @@ from nilearn.glm.second_level import SecondLevelModel
 from nilearn.plotting import plot_design_matrix
 from src.my_settings import settings
 
-# Load settings
-settings = settings()
-
 
 def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list):
     """

@@ -2,6 +2,29 @@ import os
 
 
 def settings():
+    """
+    Initialize and return a dictionary containing configuration settings for the project.
+
+    Returns:
+    - settings (dict): A dictionary with the following keys and values:
+        - "bids_path" (str): Path to the BIDS dataset.
+        - "derivatives_path" (str): Path to the derivatives folder.
+        - "out_glm_path" (str): Path to the output folder for GLM results.
+        - "out_glm_group_path" (str): Path to the output folder for group-level GLM results.
+        - "git_path" (str): Path to the GitHub repository.
+        - "space_label" (str): Label for the space used in the analysis.
+        - "sub_labels" (list): List of subject labels.
+        - "run_labels" (list): List of run labels.
+        - "confounds_of_interest" (list): List of confound variables of interest.
+
+    This function performs the following steps:
+    1. Initializes an empty dictionary.
+    2. Defines subject labels as a list of strings formatted as two-digit numbers from 01 to 22.
+    3. Defines run labels as a list of strings ["1", "2"].
+    4. Defines a list of confound variables of interest.
+    5. Adds paths, labels, and confound variables to the dictionary.
+    6. Returns the dictionary.
+    """
 
     # inialize dictionary
     settings = {}
