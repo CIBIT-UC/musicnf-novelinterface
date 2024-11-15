@@ -27,6 +27,7 @@ def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list
     1. Iterates over subjects specified in the settings.
     2. For each subject, iterates over runs specified in the settings.
     3. Loads functional images, event files, and confound files for each run.
+    3.1. If physio data is available, it is also loaded and added to the confound data.
     4. Preprocesses the event and confound data.
     5. Fits a first-level GLM model to the data.
     6. Plots and saves the design matrix for each run.
@@ -92,6 +93,35 @@ def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list
 
             # fill NaNs with 0
             confounds = confounds.fillna(0)
+
+            # PHYSIO DATA REGRESSORS
+            physio_file = os.path.join(
+                settings["bids_path"],
+                "derivatives",
+                "physio-out",
+                f"sub-{sub_label}",
+                f"sub-{sub_label}_task-{task_label}_run-{run_label}_desc-physioregressors.txt",
+            )
+
+            # if physio file exists, get the regressors
+            if os.path.exists(physio_file):
+                print(
+                    f"Found physio file for sub-{sub_label} task-{task_label} run-{run_label}"
+                )
+
+                # read physio_file
+                physio = pd.read_csv(physio_file, sep="\t", header=None)
+
+                # rename columns to physio01, physio02, etc.
+                physio.columns = [
+                    f"physio{i:02}" for i in range(1, physio.shape[1] + 1)
+                ]
+
+                # remove columns with only nans
+                physio = physio.dropna(axis=1, how="all")
+
+                # join confounds and physio
+                confounds = pd.concat([confounds, physio], axis=1)
 
             # normalize all confounds to have mean 0 and std 1
             confounds = (confounds - confounds.mean()) / confounds.std()
