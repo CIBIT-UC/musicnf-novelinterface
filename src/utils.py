@@ -13,7 +13,7 @@ def generate_brainnetome_mask(
     df = pd.read_csv(atlas_labels, sep="\t")
 
     # get label_id for all that contain the roi_string
-    labels = df[df["Description_Short"].str.contains(roi_string, case=False)][
+    labels = df[df["Description_Short"].str.contains(roi_string, case=True)][
         "Label_ID"
     ].tolist()
 
