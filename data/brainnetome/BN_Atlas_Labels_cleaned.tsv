@@ -1,0 +1,247 @@
+Lobe	Gyrus	Label	Label_ID	Description	MNI	Hemisphere	Description_Short	Description_Long
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_L_7_1	1	A8m, medial area 8	-5 ,15, 54 	L	A8m	 medial area 8
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_L_7_2	3	A8dl, dorsolateral area 8	-18, 24, 53 	L	A8dl	 dorsolateral area 8
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_L_7_3	5	A9l, lateral area 9	-11, 49, 40 	L	A9l	 lateral area 9
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_L_7_4	7	A6dl, dorsolateral area 6	-18, -1, 65 	L	A6dl	 dorsolateral area 6
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_L_7_5	9	A6m, medial area 6	-6, -5, 58 	L	A6m	 medial area 6
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_L_7_6	11	A9m,medial area 9	-5, 36, 38 	L	A9m	medial area 9
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_L_7_7	13	A10m, medial area 10	-8, 56, 15 	L	A10m	 medial area 10
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_L_7_1	15	A9/46d, dorsal area 9/46	-27, 43, 31 	L	A9/46d	 dorsal area 9/46
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_L_7_2	17	IFJ, inferior frontal junction	-42, 13, 36 	L	IFJ	 inferior frontal junction
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_L_7_3	19	A46, area 46	-28, 56, 12 	L	A46	 area 46
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_L_7_4	21	A9/46v, ventral area 9/46 	-41, 41, 16 	L	A9/46v	 ventral area 9/46 
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_L_7_5	23	A8vl, ventrolateral area 8	-33, 23, 45 	L	A8vl	 ventrolateral area 8
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_L_7_6	25	A6vl, ventrolateral area 6	-32, 4, 55 	L	A6vl	 ventrolateral area 6
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_L_7_7	27	A10l, lateral area10	-26, 60, -6 	L	A10l	 lateral area10
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_L_6_1	29	A44d,dorsal area 44	-46, 13, 24 	L	A44d	dorsal area 44
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_L_6_2	31	IFS, inferior frontal sulcus	-47, 32, 14 	L	IFS	 inferior frontal sulcus
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_L_6_3	33	A45c, caudal area 45	-53, 23, 11 	L	A45c	 caudal area 45
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_L_6_4	35	A45r, rostral area 45	-49, 36, -3 	L	A45r	 rostral area 45
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_L_6_5	37	A44op, opercular area 44	-39, 23, 4 	L	A44op	 opercular area 44
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_L_6_6	39	A44v, ventral area 44	-52, 13, 6 	L	A44v	 ventral area 44
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_L_6_1	41	A14m, medial area 14	-7, 54, -7 	L	A14m	 medial area 14
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_L_6_2	43	A12/47o, orbital area 12/47	-36, 33, -16 	L	A12/47o	 orbital area 12/47
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_L_6_3	45	A11l, lateral area 11	-23, 38, -18 	L	A11l	 lateral area 11
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_L_6_4	47	A11m, medial area 11	-6, 52, -19 	L	A11m	 medial area 11
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_L_6_5	49	A13, area 13	-10, 18, -19 	L	A13	 area 13
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_L_6_6	51	A12/47l, lateral area 12/47	-41, 32, -9 	L	A12/47l	 lateral area 12/47
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_L_6_1	53	A4hf, area 4(head and face region)	-49, -8, 39 	L	A4hf	 area 4(head and face region)
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_L_6_2	55	A6cdl, caudal dorsolateral area 6	-32, -9, 58 	L	A6cdl	 caudal dorsolateral area 6
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_L_6_3	57	A4ul, area 4(upper limb region)	-26, -25, 63 	L	A4ul	 area 4(upper limb region)
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_L_6_4	59	A4t, area 4(trunk region)	-13, -20, 73 	L	A4t	 area 4(trunk region)
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_L_6_5	61	A4tl, area 4(tongue and larynx region)	-52, 0, 8 	L	A4tl	 area 4(tongue and larynx region)
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_L_6_6	63	A6cvl, caudal ventrolateral area 6	-49, 5, 30 	L	A6cvl	 caudal ventrolateral area 6
+Frontal Lobe 	PCL, Paracentral Lobule	PCL_L_2_1	65	A1/2/3ll, area1/2/3 (lower limb region)	-8, -38, 58 	L	A1/2/3ll	 area1/2/3 (lower limb region)
+Frontal Lobe 	PCL, Paracentral Lobule	PCL_L_2_2	67	A4ll, area 4 (lower limb region)	-4, -23, 61 	L	A4ll	 area 4 (lower limb region)
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_L_6_1	69	A38m, medial area 38	-32, 14, -34 	L	A38m	 medial area 38
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_L_6_2	71	A41/42, area 41/42	-54, -32, 12 	L	A41/42	 area 41/42
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_L_6_3	73	TE1.0 and TE1.2, TE1.0 and TE1.2	-50, -11, 1 	L	TE1.0 and TE1.2	 TE1.0 and TE1.2
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_L_6_4	75	A22c, caudal area 22	-62, -33, 7 	L	A22c	 caudal area 22
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_L_6_5	77	A38l, lateral area 38	-45, 11, -20 	L	A38l	 lateral area 38
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_L_6_6	79	A22r, rostral area 22	-55, -3, -10 	L	A22r	 rostral area 22
+Temporal Lobe	MTG, Middle Temporal Gyrus	MTG_L_4_1	81	A21c, caudal area 21	-65, -30, -12 	L	A21c	 caudal area 21
+Temporal Lobe	MTG, Middle Temporal Gyrus	MTG_L_4_2	83	A21r, rostral area 21	-53, 2, -30 	L	A21r	 rostral area 21
+Temporal Lobe	MTG, Middle Temporal Gyrus	MTG_L_4_3	85	A37dl, dorsolateral area37	-59, -58, 4 	L	A37dl	 dorsolateral area37
+Temporal Lobe	MTG, Middle Temporal Gyrus	MTG_L_4_4	87	aSTS, anterior superior temporal sulcus	-58, -20, -9 	L	aSTS	 anterior superior temporal sulcus
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_L_7_1	89	A20iv, intermediate ventral area 20	-45, -26, -27 	L	A20iv	 intermediate ventral area 20
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_L_7_2	91	A37elv, extreme lateroventral area37	-51, -57, -15 	L	A37elv	 extreme lateroventral area37
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_L_7_3	93	A20r, rostral area 20	-43, -2, -41 	L	A20r	 rostral area 20
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_L_7_4	95	A20il, intermediate lateral area 20	-56, -16, -28 	L	A20il	 intermediate lateral area 20
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_L_7_5	97	A37vl, ventrolateral area 37	-55, -60, -6 	L	A37vl	 ventrolateral area 37
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_L_7_6	99	A20cl, caudolateral of area 20	-59, -42, -16 	L	A20cl	 caudolateral of area 20
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_L_7_7	101	A20cv, caudoventral of area 20	-55, -31, -27 	L	A20cv	 caudoventral of area 20
+Temporal Lobe	FuG, Fusiform Gyrus	FuG_L_3_1	103	A20rv, rostroventral area 20	-33, -16, -32 	L	A20rv	 rostroventral area 20
+Temporal Lobe	FuG, Fusiform Gyrus	FuG_L_3_2	105	A37mv, medioventral area37	-31, -64, -14 	L	A37mv	 medioventral area37
+Temporal Lobe	FuG, Fusiform Gyrus	FuG_L_3_3	107	A37lv, lateroventral area37	-42, -51, -17 	L	A37lv	 lateroventral area37
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_L_6_1	109	A35/36r, rostral area 35/36	-27, -7, -34 	L	A35/36r	 rostral area 35/36
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_L_6_2	111	A35/36c, caudal area 35/36	-25, -25, -26 	L	A35/36c	 caudal area 35/36
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_L_6_3	113	TL, area TL (lateral PPHC and posterior parahippocampal gyrus)	-28, -32, -18 	L	TL	 area TL (lateral PPHC and posterior parahippocampal gyrus)
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_L_6_4	115	A28/34, area 28/34 (EC and entorhinal cortex)	-19, -12, -30 	L	A28/34	 area 28/34 (EC and entorhinal cortex)
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_L_6_5	117	TI, area TI(temporal agranular insular cortex)	-23, 2, -32 	L	TI	 area TI(temporal agranular insular cortex)
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_L_6_6	119	TH, area TH (medial PPHC)	-17, -39, -10 	L	TH	 area TH (medial PPHC)
+Temporal Lobe	pSTS, posterior Superior Temporal Sulcus 	pSTS_L_2_1	121	rpSTS, rostroposterior superior temporal sulcus	-54, -40, 4 	L	rpSTS	 rostroposterior superior temporal sulcus
+Temporal Lobe	pSTS, posterior Superior Temporal Sulcus 	pSTS_L_2_2	123	cpSTS, caudoposterior superior temporal sulcus	-52, -50, 11 	L	cpSTS	 caudoposterior superior temporal sulcus
+Parietal Lobe	SPL, Superior Parietal Lobule	SPL_L_5_1	125	A7r, rostral area 7	-16, -60, 63 	L	A7r	 rostral area 7
+Parietal Lobe	SPL, Superior Parietal Lobule	SPL_L_5_2	127	A7c, caudal area 7	-15, -71, 52 	L	A7c	 caudal area 7
+Parietal Lobe	SPL, Superior Parietal Lobule	SPL_L_5_3	129	A5l, lateral area 5	-33, -47, 50 	L	A5l	 lateral area 5
+Parietal Lobe	SPL, Superior Parietal Lobule	SPL_L_5_4	131	A7pc, postcentral area 7	-22, -47, 65 	L	A7pc	 postcentral area 7
+Parietal Lobe	SPL, Superior Parietal Lobule	SPL_L_5_5	133	A7ip, intraparietal area 7(hIP3)	-27, -59, 54 	L	A7ip	 intraparietal area 7(hIP3)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_L_6_1	135	A39c, caudal area 39(PGp)	-34, -80, 29 	L	A39c	 caudal area 39(PGp)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_L_6_2	137	A39rd, rostrodorsal area 39(Hip3)	-38, -61, 46 	L	A39rd	 rostrodorsal area 39(Hip3)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_L_6_3	139	A40rd, rostrodorsal area 40(PFt)	-51, -33, 42 	L	A40rd	 rostrodorsal area 40(PFt)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_L_6_4	141	A40c, caudal area 40(PFm)	-56, -49, 38 	L	A40c	 caudal area 40(PFm)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_L_6_5	143	A39rv, rostroventral area 39(PGa)	-47, -65, 26 	L	A39rv	 rostroventral area 39(PGa)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_L_6_6	145	A40rv, rostroventral area 40(PFop)	-53, -31, 23 	L	A40rv	 rostroventral area 40(PFop)
+Parietal Lobe	Pcun, Precuneus	PCun_L_4_1	147	A7m, medial area 7(PEp)	-5, -63, 51 	L	A7m	 medial area 7(PEp)
+Parietal Lobe	Pcun, Precuneus	PCun_L_4_2	149	A5m, medial area 5(PEm)	-8, -47, 57 	L	A5m	 medial area 5(PEm)
+Parietal Lobe	Pcun, Precuneus	PCun_L_4_3	151	dmPOS, dorsomedial parietooccipital  sulcus(PEr) 	-12, -67, 25 	L	dmPOS	 dorsomedial parietooccipital  sulcus(PEr) 
+Parietal Lobe	Pcun, Precuneus	PCun_L_4_4	153	A31, area 31 (Lc1)	-6, -55, 34 	L	A31	 area 31 (Lc1)
+Parietal Lobe	PoG, Postcentral Gyrus	PoG_L_4_1	155	A1/2/3ulhf, area 1/2/3(upper limb and head and face region)	-50, -16, 43 	L	A1/2/3ulhf	 area 1/2/3(upper limb and head and face region)
+Parietal Lobe	PoG, Postcentral Gyrus	PoG_L_4_2	157	A1/2/3tonIa, area 1/2/3(tongue and larynx region)	-56, -14, 16 	L	A1/2/3tonIa	 area 1/2/3(tongue and larynx region)
+Parietal Lobe	PoG, Postcentral Gyrus	PoG_L_4_3	159	A2, area 2	-46, -30, 50 	L	A2	 area 2
+Parietal Lobe	PoG, Postcentral Gyrus	PoG_L_4_4	161	A1/2/3tru, area1/2/3(trunk region)	-21, -35, 68 	L	A1/2/3tru	 area1/2/3(trunk region)
+Insular Lobe	INS, Insular Gyrus	INS_L_6_1	163	G, hypergranular insula	-36, -20, 10 	L	G	 hypergranular insula
+Insular Lobe	INS, Insular Gyrus	INS_L_6_2	165	vIa, ventral agranular insula	-32, 14, -13 	L	vIa	 ventral agranular insula
+Insular Lobe	INS, Insular Gyrus	INS_L_6_3	167	dIa, dorsal agranular insula	-34, 18, 1 	L	dIa	 dorsal agranular insula
+Insular Lobe	INS, Insular Gyrus	INS_L_6_4	169	vId/vIg, ventral dysgranular and granular insula	-38, -4, -9 	L	vId/vIg	 ventral dysgranular and granular insula
+Insular Lobe	INS, Insular Gyrus	INS_L_6_5	171	dIg, dorsal granular insula	-38, -8, 8 	L	dIg	 dorsal granular insula
+Insular Lobe	INS, Insular Gyrus	INS_L_6_6	173	dId, dorsal dysgranular insula	-38, 5, 5 	L	dId	 dorsal dysgranular insula
+Limbic Lobe	CG, Cingulate Gyrus	CG_L_7_1	175	A23d, dorsal area 23	-4, -39, 31 	L	A23d	 dorsal area 23
+Limbic Lobe	CG, Cingulate Gyrus	CG_L_7_2	177	A24rv, rostroventral area 24	-3, 8, 25 	L	A24rv	 rostroventral area 24
+Limbic Lobe	CG, Cingulate Gyrus	CG_L_7_3	179	A32p, pregenual area 32	-6, 34, 21 	L	A32p	 pregenual area 32
+Limbic Lobe	CG, Cingulate Gyrus	CG_L_7_4	181	A23v, ventral area 23	-8, -47, 10 	L	A23v	 ventral area 23
+Limbic Lobe	CG, Cingulate Gyrus	CG_L_7_5	183	A24cd, caudodorsal area 24	-5, 7, 37 	L	A24cd	 caudodorsal area 24
+Limbic Lobe	CG, Cingulate Gyrus	CG_L_7_6	185	A23c, caudal area 23	-7, -23, 41 	L	A23c	 caudal area 23
+Limbic Lobe	CG, Cingulate Gyrus	CG_L_7_7	187	A32sg, subgenual area 32	-4, 39, -2 	L	A32sg	 subgenual area 32
+Occipital Lobe	MVOcC, MedioVentral Occipital Cortex	MVOcC _L_5_1	189	cLinG, caudal lingual gyrus	-11, -82, -11 	L	cLinG	 caudal lingual gyrus
+Occipital Lobe	MVOcC, MedioVentral Occipital Cortex	MVOcC _L_5_2	191	rCunG, rostral cuneus gyrus	-5, -81, 10 	L	rCunG	 rostral cuneus gyrus
+Occipital Lobe	MVOcC, MedioVentral Occipital Cortex	MVOcC _L_5_3	193	cCunG, caudal cuneus gyrus	-6, -94, 1 	L	cCunG	 caudal cuneus gyrus
+Occipital Lobe	MVOcC, MedioVentral Occipital Cortex	MVOcC _L_5_4	195	rLinG, rostral lingual gyrus	-17, -60, -6 	L	rLinG	 rostral lingual gyrus
+Occipital Lobe	MVOcC, MedioVentral Occipital Cortex	MVOcC _L_5_5	197	vmPOS,ventromedial parietooccipital sulcus	-13, -68, 12 	L	vmPOS	ventromedial parietooccipital sulcus
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC_L_4_1	199	mOccG, middle occipital gyrus	-31, -89, 11 	L	mOccG	 middle occipital gyrus
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC _L_4_2	201	V5/MT+, area V5/MT+	-46, -74, 3 	L	V5/MT+	 area V5/MT+
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC _L_4_3	203	OPC, occipital polar cortex	-18, -99, 2 	L	OPC	 occipital polar cortex
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC_L_4_4	205	iOccG, inferior occipital gyrus	-30, -88, -12 	L	iOccG	 inferior occipital gyrus
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC _L_2_1	207	msOccG, medial superior occipital gyrus	-11, -88, 31 	L	msOccG	 medial superior occipital gyrus
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC _L_2_2	209	lsOccG, lateral superior occipital gyrus	-22, -77, 36 	L	lsOccG	 lateral superior occipital gyrus
+Subcortical Nuclei	Amyg, Amygdala	Amyg_L_2_1	211	mAmyg, medial amygdala	-19, -2, -20 	L	mAmyg	 medial amygdala
+Subcortical Nuclei	Amyg, Amygdala	Amyg_L_2_2	213	lAmyg, lateral amygdala	-27, -4, -20 	L	lAmyg	 lateral amygdala
+Subcortical Nuclei	Hipp, Hippocampus	Hipp_L_2_1	215	rHipp, rostral hippocampus	-22, -14, -19 	L	rHipp	 rostral hippocampus
+Subcortical Nuclei	Hipp, Hippocampus	Hipp_L_2_2	217	cHipp, caudal hippocampus	-28, -30, -10 	L	cHipp	 caudal hippocampus
+Subcortical Nuclei	BG, Basal Ganglia	BG_L_6_1	219	vCa, ventral caudate	-12, 14, 0 	L	vCa	 ventral caudate
+Subcortical Nuclei	BG, Basal Ganglia	BG_L_6_2	221	GP, globus pallidus	-22, -2, 4 	L	GP	 globus pallidus
+Subcortical Nuclei	BG, Basal Ganglia	BG_L_6_3	223	NAC, nucleus accumbens	-17, 3, -9 	L	NAC	 nucleus accumbens
+Subcortical Nuclei	BG, Basal Ganglia	BG_L_6_4	225	vmPu, ventromedial putamen	-23, 7, -4 	L	vmPu	 ventromedial putamen
+Subcortical Nuclei	BG, Basal Ganglia	BG_L_6_5	227	dCa, dorsal caudate	-14, 2, 16 	L	dCa	 dorsal caudate
+Subcortical Nuclei	BG, Basal Ganglia	BG_L_6_6	229	dlPu, dorsolateral putamen	-28, -5, 2 	L	dlPu	 dorsolateral putamen
+Subcortical Nuclei	Tha, Thalamus	Tha_L_8_1	231	mPFtha, medial pre-frontal thalamus	-7, -12, 5 	L	mPFtha	 medial pre-frontal thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_L_8_2	233	mPMtha, pre-motor thalamus	-18, -13, 3 	L	mPMtha	 pre-motor thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_L_8_3	235	Stha, sensory thalamus	-18, -23, 4 	L	Stha	 sensory thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_L_8_4	237	rTtha, rostral temporal thalamus	-7, -14, 7 	L	rTtha	 rostral temporal thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_L_8_5	239	PPtha, posterior parietal thalamus	-16, -24, 6 	L	PPtha	 posterior parietal thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_L_8_6	241	Otha, occipital thalamus	-15, -28, 4 	L	Otha	 occipital thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_L_8_7	243	cTtha, caudal temporal thalamus	-12, -22, 13 	L	cTtha	 caudal temporal thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_L_8_8	245	lPFtha, lateral pre-frontal thalamus	-11, -14, 2 	L	lPFtha	 lateral pre-frontal thalamus
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_R_7_1	2	A8m, medial area 8	7, 16, 54 	R	A8m	 medial area 8
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_R_7_2	4	A8dl, dorsolateral area 8	22, 26, 51 	R	A8dl	 dorsolateral area 8
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_R_7_3	6	A9l, lateral area 9	13, 48, 40 	R	A9l	 lateral area 9
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_R_7_4	8	A6dl, dorsolateral area 6	20, 4, 64 	R	A6dl	 dorsolateral area 6
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_R_7_5	10	A6m, medial area 6	7, -4, 60 	R	A6m	 medial area 6
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_R_7_6	12	A9m,medial area 9	6, 38, 35 	R	A9m	medial area 9
+Frontal Lobe 	SFG, Superior Frontal Gyrus  	SFG_R_7_7	14	A10m, medial area 10	8, 58, 13 	R	A10m	 medial area 10
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_R_7_1	16	A9/46d, dorsal area 9/46	30, 37, 36 	R	A9/46d	 dorsal area 9/46
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_R_7_2	18	IFJ, inferior frontal junction	42, 11, 39 	R	IFJ	 inferior frontal junction
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_R_7_3	20	A46, area 46	28, 55, 17 	R	A46	 area 46
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_R_7_4	22	A9/46v, ventral area 9/46 	42, 44, 14 	R	A9/46v	 ventral area 9/46 
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_R_7_5	24	A8vl, ventrolateral area 8	42, 27, 39 	R	A8vl	 ventrolateral area 8
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_R_7_6	26	A6vl, ventrolateral area 6	34, 8, 54 	R	A6vl	 ventrolateral area 6
+Frontal Lobe 	MFG, Middle Frontal Gyrus 	MFG_R_7_7	28	A10l, lateral area10	25, 61, -4 	R	A10l	 lateral area10
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_R_6_1	30	A44d,dorsal area 44	45, 16, 25 	R	A44d	dorsal area 44
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_R_6_2	32	IFS, inferior frontal sulcus	48, 35, 13 	R	IFS	 inferior frontal sulcus
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_R_6_3	34	A45c, caudal area 45	54, 24, 12 	R	A45c	 caudal area 45
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_R_6_4	36	A45r, rostral area 45	51, 36, -1 	R	A45r	 rostral area 45
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_R_6_5	38	A44op, opercular area 44	42, 22, 3 	R	A44op	 opercular area 44
+Frontal Lobe 	IFG, Inferior Frontal Gyrus	IFG_R_6_6	40	A44v, ventral area 44	54, 14, 11 	R	A44v	 ventral area 44
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_R_6_1	42	A14m, medial area 14	6, 47, -7 	R	A14m	 medial area 14
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_R_6_2	44	A12/47o, orbital area 12/47	40, 39, -14 	R	A12/47o	 orbital area 12/47
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_R_6_3	46	A11l, lateral area 11	23, 36, -18 	R	A11l	 lateral area 11
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_R_6_4	48	A11m, medial area 11	6, 57, -16 	R	A11m	 medial area 11
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_R_6_5	50	A13, area 13	9, 20, -19 	R	A13	 area 13
+Frontal Lobe 	OrG, Orbital Gyrus	OrG_R_6_6	52	A12/47l, lateral area 12/47	42, 31, -9 	R	A12/47l	 lateral area 12/47
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_R_6_1	54	A4hf, area 4(head and face region)	55, -2, 33 	R	A4hf	 area 4(head and face region)
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_R_6_2	56	A6cdl, caudal dorsolateral area 6	33, -7, 57 	R	A6cdl	 caudal dorsolateral area 6
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_R_6_3	58	A4ul, area 4(upper limb region)	34, -19, 59 	R	A4ul	 area 4(upper limb region)
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_R_6_4	60	A4t, area 4(trunk region)	15, -22, 71 	R	A4t	 area 4(trunk region)
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_R_6_5	62	A4tl, area 4(tongue and larynx region)	54, 4, 9 	R	A4tl	 area 4(tongue and larynx region)
+Frontal Lobe 	PrG, Precentral Gyrus	PrG_R_6_6	64	A6cvl, caudal ventrolateral area 6	51, 7, 30 	R	A6cvl	 caudal ventrolateral area 6
+Frontal Lobe 	PCL, Paracentral Lobule	PCL_R_2_1	66	A1/2/3ll, area1/2/3 (lower limb region)	10, -34, 54 	R	A1/2/3ll	 area1/2/3 (lower limb region)
+Frontal Lobe 	PCL, Paracentral Lobule	PCL_R_2_2	68	A4ll, area 4 (lower limb region)	5, -21, 61 	R	A4ll	 area 4 (lower limb region)
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_R_6_1	70	A38m, medial area 38	31, 15, -34 	R	A38m	 medial area 38
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_R_6_2	72	A41/42, area 41/42	54, -24, 11 	R	A41/42	 area 41/42
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_R_6_3	74	TE1.0 and TE1.2, TE1.0 and TE1.2	51, -4, -1 	R	TE1.0 and TE1.2	 TE1.0 and TE1.2
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_R_6_4	76	A22c, caudal area 22	66, -20, 6 	R	A22c	 caudal area 22
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_R_6_5	78	A38l, lateral area 38	47, 12, -20 	R	A38l	 lateral area 38
+Temporal Lobe	STG, Superior Temporal Gyrus	STG_R_6_6	80	A22r, rostral area 22	56, -12, -5 	R	A22r	 rostral area 22
+Temporal Lobe	MTG, Middle Temporal Gyrus	MTG_R_4_1	82	A21c, caudal area 21	65, -29, -13 	R	A21c	 caudal area 21
+Temporal Lobe	MTG, Middle Temporal Gyrus	MTG_R_4_2	84	A21r, rostral area 21	51, 6, -32 	R	A21r	 rostral area 21
+Temporal Lobe	MTG, Middle Temporal Gyrus	MTG_R_4_3	86	A37dl, dorsolateral area37	60, -53, 3 	R	A37dl	 dorsolateral area37
+Temporal Lobe	MTG, Middle Temporal Gyrus	MTG_R_4_4	88	aSTS, anterior superior temporal sulcus	58, -16, -10 	R	aSTS	 anterior superior temporal sulcus
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_R_7_1	90	A20iv, intermediate ventral area 20	46, -14, -33 	R	A20iv	 intermediate ventral area 20
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_R_7_2	92	A37elv, extreme lateroventral area37	53, -52, -18 	R	A37elv	 extreme lateroventral area37
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_R_7_3	94	A20r, rostral area 20	40, 0, -43 	R	A20r	 rostral area 20
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_R_7_4	96	A20il, intermediate lateral area 20	55, -11, -32 	R	A20il	 intermediate lateral area 20
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_R_7_5	98	A37vl, ventrolateral area 37	54, -57, -8 	R	A37vl	 ventrolateral area 37
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_R_7_6	100	A20cl, caudolateral of area 20	61, -40, -17 	R	A20cl	 caudolateral of area 20
+Temporal Lobe	ITG, Inferior Temporal Gyrus	ITG_R_7_7	102	A20cv, caudoventral of area 20	54, -31, -26 	R	A20cv	 caudoventral of area 20
+Temporal Lobe	FuG, Fusiform Gyrus	FuG_R_3_1	104	A20rv, rostroventral area 20	33, -15, -34 	R	A20rv	 rostroventral area 20
+Temporal Lobe	FuG, Fusiform Gyrus	FuG_R_3_2	106	A37mv, medioventral area37	31, -62, -14 	R	A37mv	 medioventral area37
+Temporal Lobe	FuG, Fusiform Gyrus	FuG_R_3_3	108	A37lv, lateroventral area37	43, -49, -19 	R	A37lv	 lateroventral area37
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_R_6_1	110	A35/36r, rostral area 35/36	28, -8, -33 	R	A35/36r	 rostral area 35/36
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_R_6_2	112	A35/36c, caudal area 35/36	26, -23, -27 	R	A35/36c	 caudal area 35/36
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_R_6_3	114	TL, area TL (lateral PPHC and posterior parahippocampal gyrus)	30, -30, -18 	R	TL	 area TL (lateral PPHC and posterior parahippocampal gyrus)
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_R_6_4	116	A28/34, area 28/34 (EC and entorhinal cortex)	19, -10, -30 	R	A28/34	 area 28/34 (EC and entorhinal cortex)
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_R_6_5	118	TI, area TI(temporal agranular insular cortex)	22, 1, -36 	R	TI	 area TI(temporal agranular insular cortex)
+Temporal Lobe	PhG, Parahippocampal Gyrus	PhG_R_6_6	120	TH, area TH (medial PPHC)	19, -36, -11 	R	TH	 area TH (medial PPHC)
+Temporal Lobe	pSTS, posterior Superior Temporal Sulcus 	pSTS_R_2_1	122	rpSTS, rostroposterior superior temporal sulcus	53, -37, 3 	R	rpSTS	 rostroposterior superior temporal sulcus
+Temporal Lobe	pSTS, posterior Superior Temporal Sulcus 	pSTS_R_2_2	124	cpSTS, caudoposterior superior temporal sulcus	57, -40, 12 	R	cpSTS	 caudoposterior superior temporal sulcus
+Parietal Lobe	SPL, Superior Parietal Lobule	SPL_R_5_1	126	A7r, rostral area 7	19, -57, 65 	R	A7r	 rostral area 7
+Parietal Lobe	SPL, Superior Parietal Lobule	SPL_R_5_2	128	A7c, caudal area 7	19, -69, 54 	R	A7c	 caudal area 7
+Parietal Lobe	SPL, Superior Parietal Lobule	SPL_R_5_3	130	A5l, lateral area 5	35, -42, 54 	R	A5l	 lateral area 5
+Parietal Lobe	SPL, Superior Parietal Lobule	SPL_R_5_4	132	A7pc, postcentral area 7	23, -43, 67 	R	A7pc	 postcentral area 7
+Parietal Lobe	SPL, Superior Parietal Lobule	SPL_R_5_5	134	A7ip, intraparietal area 7(hIP3)	31, -54, 53 	R	A7ip	 intraparietal area 7(hIP3)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_R_6_1	136	A39c, caudal area 39(PGp)	45, -71, 20 	R	A39c	 caudal area 39(PGp)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_R_6_2	138	A39rd, rostrodorsal area 39(Hip3)	39, -65, 44 	R	A39rd	 rostrodorsal area 39(Hip3)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_R_6_3	140	A40rd, rostrodorsal area 40(PFt)	47, -35, 45 	R	A40rd	 rostrodorsal area 40(PFt)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_R_6_4	142	A40c, caudal area 40(PFm)	57, -44, 38 	R	A40c	 caudal area 40(PFm)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_R_6_5	144	A39rv, rostroventral area 39(PGa)	53, -54, 25 	R	A39rv	 rostroventral area 39(PGa)
+Parietal Lobe	IPL, Inferior Parietal Lobule	IPL_R_6_6	146	A40rv, rostroventral area 40(PFop)	55, -26, 26 	R	A40rv	 rostroventral area 40(PFop)
+Parietal Lobe	Pcun, Precuneus	PCun_R_4_1	148	A7m, medial area 7(PEp)	6, -65, 51 	R	A7m	 medial area 7(PEp)
+Parietal Lobe	Pcun, Precuneus	PCun_R_4_2	150	A5m, medial area 5(PEm)	7, -47, 58 	R	A5m	 medial area 5(PEm)
+Parietal Lobe	Pcun, Precuneus	PCun_R_4_3	152	dmPOS, dorsomedial parietooccipital  sulcus(PEr) 	16, -64, 25 	R	dmPOS	 dorsomedial parietooccipital  sulcus(PEr) 
+Parietal Lobe	Pcun, Precuneus	PCun_R_4_4	154	A31, area 31 (Lc1)	6, -54, 35 	R	A31	 area 31 (Lc1)
+Parietal Lobe	PoG, Postcentral Gyrus	PoG_R_4_1	156	A1/2/3ulhf, area 1/2/3(upper limb and head and face region)	50, -14, 44 	R	A1/2/3ulhf	 area 1/2/3(upper limb and head and face region)
+Parietal Lobe	PoG, Postcentral Gyrus	PoG_R_4_2	158	A1/2/3tonIa, area 1/2/3(tongue and larynx region)	56, -10, 15 	R	A1/2/3tonIa	 area 1/2/3(tongue and larynx region)
+Parietal Lobe	PoG, Postcentral Gyrus	PoG_R_4_3	160	A2, area 2	48, -24, 48 	R	A2	 area 2
+Parietal Lobe	PoG, Postcentral Gyrus	PoG_R_4_4	162	A1/2/3tru, area1/2/3(trunk region)	20, -33, 69 	R	A1/2/3tru	 area1/2/3(trunk region)
+Insular Lobe	INS, Insular Gyrus	INS_R_6_1	164	G, hypergranular insula	37, -18, 8 	R	G	 hypergranular insula
+Insular Lobe	INS, Insular Gyrus	INS_R_6_2	166	vIa, ventral agranular insula	33, 14, -13 	R	vIa	 ventral agranular insula
+Insular Lobe	INS, Insular Gyrus	INS_R_6_3	168	dIa, dorsal agranular insula	36, 18, 1 	R	dIa	 dorsal agranular insula
+Insular Lobe	INS, Insular Gyrus	INS_R_6_4	170	vId/vIg, ventral dysgranular and granular insula	39, -2, -9 	R	vId/vIg	 ventral dysgranular and granular insula
+Insular Lobe	INS, Insular Gyrus	INS_R_6_5	172	dIg, dorsal granular insula	39, -7, 8 	R	dIg	 dorsal granular insula
+Insular Lobe	INS, Insular Gyrus	INS_R_6_6	174	dId, dorsal dysgranular insula	38, 5, 5 	R	dId	 dorsal dysgranular insula
+Limbic Lobe	CG, Cingulate Gyrus	CG_R_7_1	176	A23d, dorsal area 23	4, -37, 32 	R	A23d	 dorsal area 23
+Limbic Lobe	CG, Cingulate Gyrus	CG_R_7_2	178	A24rv, rostroventral area 24	5, 22, 12 	R	A24rv	 rostroventral area 24
+Limbic Lobe	CG, Cingulate Gyrus	CG_R_7_3	180	A32p, pregenual area 32	5, 28, 27 	R	A32p	 pregenual area 32
+Limbic Lobe	CG, Cingulate Gyrus	CG_R_7_4	182	A23v, ventral area 23	9, -44, 11 	R	A23v	 ventral area 23
+Limbic Lobe	CG, Cingulate Gyrus	CG_R_7_5	184	A24cd, caudodorsal area 24	4, 6, 38 	R	A24cd	 caudodorsal area 24
+Limbic Lobe	CG, Cingulate Gyrus	CG_R_7_6	186	A23c, caudal area 23	6, -20, 40 	R	A23c	 caudal area 23
+Limbic Lobe	CG, Cingulate Gyrus	CG_R_7_7	188	A32sg, subgenual area 32	5, 41, 6 	R	A32sg	 subgenual area 32
+Occipital Lobe	MVOcC, MedioVentral Occipital Cortex	MVOcC _R_5_1	190	cLinG, caudal lingual gyrus	10, -85, -9 	R	cLinG	 caudal lingual gyrus
+Occipital Lobe	MVOcC, MedioVentral Occipital Cortex	MVOcC _R_5_2	192	rCunG, rostral cuneus gyrus	7, -76, 11 	R	rCunG	 rostral cuneus gyrus
+Occipital Lobe	MVOcC, MedioVentral Occipital Cortex	MVOcC _R_5_3	194	cCunG, caudal cuneus gyrus	8, -90, 12 	R	cCunG	 caudal cuneus gyrus
+Occipital Lobe	MVOcC, MedioVentral Occipital Cortex	MVOcC _R_5_4	196	rLinG, rostral lingual gyrus	18, -60, -7 	R	rLinG	 rostral lingual gyrus
+Occipital Lobe	MVOcC, MedioVentral Occipital Cortex	MVOcC _R_5_5	198	vmPOS,ventromedial parietooccipital sulcus	15, -63, 12 	R	vmPOS	ventromedial parietooccipital sulcus
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC_R_4_1	200	mOccG, middle occipital gyrus	34, -86, 11 	R	mOccG	 middle occipital gyrus
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC _R_4_2	202	V5/MT+, area V5/MT+	48, -70, -1 	R	V5/MT+	 area V5/MT+
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC _R_4_3	204	OPC, occipital polar cortex	22, -97, 4 	R	OPC	 occipital polar cortex
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC_R_4_4	206	iOccG, inferior occipital gyrus	32, -85, -12 	R	iOccG	 inferior occipital gyrus
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC _R_2_1	208	msOccG, medial superior occipital gyrus	16, -85, 34 	R	msOccG	 medial superior occipital gyrus
+Occipital Lobe	LOcC, lateral Occipital Cortex	LOcC _R_2_2	210	lsOccG, lateral superior occipital gyrus	29, -75, 36 	R	lsOccG	 lateral superior occipital gyrus
+Subcortical Nuclei	Amyg, Amygdala	Amyg_R_2_1	212	mAmyg, medial amygdala	19, -2, -19 	R	mAmyg	 medial amygdala
+Subcortical Nuclei	Amyg, Amygdala	Amyg_R_2_2	214	lAmyg, lateral amygdala	28, -3, -20 	R	lAmyg	 lateral amygdala
+Subcortical Nuclei	Hipp, Hippocampus	Hipp_R_2_1	216	rHipp, rostral hippocampus	22, -12, -20 	R	rHipp	 rostral hippocampus
+Subcortical Nuclei	Hipp, Hippocampus	Hipp_R_2_2	218	cHipp, caudal hippocampus	29, -27, -10 	R	cHipp	 caudal hippocampus
+Subcortical Nuclei	BG, Basal Ganglia	BG_R_6_1	220	vCa, ventral caudate	15, 14, -2 	R	vCa	 ventral caudate
+Subcortical Nuclei	BG, Basal Ganglia	BG_R_6_2	222	GP, globus pallidus	22, -2, 3 	R	GP	 globus pallidus
+Subcortical Nuclei	BG, Basal Ganglia	BG_R_6_3	224	NAC, nucleus accumbens	15, 8, -9 	R	NAC	 nucleus accumbens
+Subcortical Nuclei	BG, Basal Ganglia	BG_R_6_4	226	vmPu, ventromedial putamen	22, 8, -1 	R	vmPu	 ventromedial putamen
+Subcortical Nuclei	BG, Basal Ganglia	BG_R_6_5	228	dCa, dorsal caudate	14, 5, 14 	R	dCa	 dorsal caudate
+Subcortical Nuclei	BG, Basal Ganglia	BG_R_6_6	230	dlPu, dorsolateral putamen	29, -3, 1 	R	dlPu	 dorsolateral putamen
+Subcortical Nuclei	Tha, Thalamus	Tha_R_8_1	232	mPFtha, medial pre-frontal thalamus	7, -11, 6 	R	mPFtha	 medial pre-frontal thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_R_8_2	234	mPMtha, pre-motor thalamus	12, -14, 1 	R	mPMtha	 pre-motor thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_R_8_3	236	Stha, sensory thalamus	18, -22, 3 	R	Stha	 sensory thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_R_8_4	238	rTtha, rostral temporal thalamus	3, -13, 5 	R	rTtha	 rostral temporal thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_R_8_5	240	PPtha, posterior parietal thalamus	15, -25, 6 	R	PPtha	 posterior parietal thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_R_8_6	242	Otha, occipital thalamus	13, -27, 8 	R	Otha	 occipital thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_R_8_7	244	cTtha, caudal temporal thalamus	10, -14, 14 	R	cTtha	 caudal temporal thalamus
+Subcortical Nuclei	Tha, Thalamus	Tha_R_8_8	246	lPFtha, lateral pre-frontal thalamus	13, -16, 7 	R	lPFtha	 lateral pre-frontal thalamus

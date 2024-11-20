@@ -1,4 +1,38 @@
+import os
 import numpy as np
+import pandas as pd
+from nilearn.image import math_img
+
+
+def generate_brainnetome_mask(
+    bn_path, roi_string, export_flag=False, output_name="brainnetome_mask"
+):
+    atlas = os.path.join(bn_path, "BN_Atlas_246_1mm.nii.gz")
+    atlas_labels = os.path.join(bn_path, "BN_Atlas_Labels_cleaned.tsv")
+
+    df = pd.read_csv(atlas_labels, sep="\t")
+
+    # get label_id for all that contain the roi_string
+    labels = df[df["Description_Short"].str.contains(roi_string, case=False)][
+        "Label_ID"
+    ].tolist()
+
+    print(f"Found labels for {roi_string}: {labels}")
+
+    # create a mask for each label and combine them
+    mask = None
+    for label in labels:
+        if mask is None:
+            mask = math_img(f"img == {label}", img=atlas)
+        else:
+            mask = math_img(
+                "img1 + img2", img1=mask, img2=math_img(f"img == {label}", img=atlas)
+            )
+
+    if export_flag:
+        mask.to_filename(f"{output_name}.nii.gz")
+
+    return mask
 
 
 def parse_prt_file(file_path):
