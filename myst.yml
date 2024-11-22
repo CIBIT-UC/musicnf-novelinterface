@@ -8,11 +8,8 @@ project:
   # authors: []
   github: https://github.com/CIBIT-UC/musicnf-novelinterface
   # To autogenerate a Table of Contents, run "myst init --write-toc"
-  toc:
-    - file: README.md
-    - title: Results
-      children:
-        - file: results/results_v0.1.md
+  exclude:
+    - tests
     
 site:
   template: book-theme
