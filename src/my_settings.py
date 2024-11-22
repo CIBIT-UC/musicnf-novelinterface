@@ -83,7 +83,10 @@ def settings():
     pd.set_option("display.max_columns", 500)
     pd.set_option("display.max_rows", 500)
 
+    # set matplotlib settings
     # set text font to Cabin
     plt.rcParams["font.family"] = "Cabin"
+    # increase font size
+    plt.rcParams.update({"font.size": 14})
 
     return settings
