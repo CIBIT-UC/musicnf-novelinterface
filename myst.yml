@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 878b18be-fb61-45f1-a160-cc026b0720b6
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/CIBIT-UC/musicnf-novelinterface
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png

@@ -1,4 +1,6 @@
 import os
+import pandas as pd
+import matplotlib.pyplot as plt
 
 
 def settings():
@@ -75,5 +77,13 @@ def settings():
     settings["run_labels"] = run_labels
     settings["tr"] = 1.5
     settings["confounds_of_interest"] = confounds_of_interest
+
+    # set pandas settings
+    # increase pandas column number display
+    pd.set_option("display.max_columns", 500)
+    pd.set_option("display.max_rows", 500)
+
+    # set text font to Cabin
+    plt.rcParams["font.family"] = "Cabin"
 
     return settings
