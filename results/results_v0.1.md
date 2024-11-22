@@ -17,6 +17,21 @@ Participants answered the POMS questionnaire immediately before and after the MR
 Participants' POMS scores before and after the MRI neurofeedback session.
 ```
 
+## Real-time metrics from TurboBV
+
+```{figure} #fig-tbv-correlation-timecourses
+:label: tbv-correlation-timecourses
+Correlation timecourses from TurboBV per participant.
+```
+
+```{figure} #fig-tbv-correlation-timecourses-average
+:label: tbv-correlation-timecourses-average
+Average correlation timecourses from TurboBV across participants.
+```
+
+
+
+
 ## GLM analyses
 ### Example design matrix
 
