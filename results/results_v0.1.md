@@ -1,3 +1,7 @@
+---
+exports:
+    - format: pdf
+---
 # Results v0.1
 Last update: 2024-11-22 18:00
 
