@@ -50,7 +50,7 @@ Group-level analysis of the localizer runs contrasting Music with Noise.
 ```
 
 ## Comparing Active and Sham neurofeedback GLM maps
-Considered spatial smoothing of 8 mm FWHM.
+Considered spatial smoothing of 8 mm FWHM. Paired analysis, 22 subjects.
 
 ### Whole-brain
 ```{figure} #fig-glm-design-activeVSsham
@@ -85,3 +85,19 @@ Glm activation results comparing the active and sham neurofeedback runs within t
 ![](#tab-glm-clusters-activeVSsham-reward-roi)
 ```
 
+## Comparing visual with music interface
+
+22 music subjects vs. 10 visual subjects, spatial smoothing of 8 mm FWHM.
+
+### Whole-brain
+
+```{figure} #fig-musicVSvisual-glm-map
+:label: musicVSvisual-glm-map
+Glm activation results comparing the active music and visual interfaces.
+```
+
+
+```{table} Cluster-level results comparing the active music and visual interfaces.
+:label: musicVSvisual-glm-clusters
+![](#tab-musicVSvisual-glm-clusters)
+```
