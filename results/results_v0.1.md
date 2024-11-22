@@ -17,7 +17,8 @@ Participants answered the POMS questionnaire immediately before and after the MR
 Participants' POMS scores before and after the MRI neurofeedback session.
 ```
 
-## GLM analysis
+## GLM analyses
+### Example design matrix
 
 Example design matrix, showing the regressors for motion, physiological signals, CSF, and WM.
 
@@ -26,6 +27,7 @@ Example design matrix, showing the regressors for motion, physiological signals,
 Design matrix for the first run of the localizer task.
 ```
 
+### Active and Sham neurofeedback runs
 ```{figure} #fig-glm-group-nf-active
 :label: glm-group-nf-active
 Group-level analysis of the active neurofeedback runs.
@@ -41,10 +43,45 @@ Group-level analysis of the sham neurofeedback runs.
 Group-level analysis of the localizer runs contrasting Motor Imagery with Rest.
 ```
 
+### Localizer
 ```{figure} #fig-glm-group-loc-music
 :label: glm-group-nf-loc-music
 Group-level analysis of the localizer runs contrasting Music with Noise.
 ```
 
+## Comparing Active and Sham neurofeedback GLM maps
+Considered spatial smoothing of 8 mm FWHM.
 
+### Whole-brain
+```{figure} #fig-glm-design-activeVSsham
+:label: glm-design-activeVSsham
+Design matrix comparing the active and sham neurofeedback runs.
+```
+
+```{figure} #fig-glm-map-activeVSsham
+:label: glm-map-activeVSsham
+Whole-brain glm activation results comparing the active and sham neurofeedback runs.
+```
+
+```{table} Cluster-level results comparing the active and sham neurofeedback runs.
+:label: glm-clusters-activeVSsham
+![](#tab-glm-clusters-activeVSsham)
+```
+
+### Reward mask from Neurosynth
+
+```{figure} #fig-neurosynth-reward-roi
+:label: neurosynth-reward-roi
+Reward mask from Neurosynth.
+```
+
+```{figure} #fig-glm-map-activeVSsham-reward-roi
+:label: glm-map-activeVSsham-reward-roi
+Glm activation results comparing the active and sham neurofeedback runs within the reward mask.
+```
+
+```{table} Cluster-level results comparing the active and sham neurofeedback runs within the reward mask.
+:label: glm-clusters-activeVSsham-reward-roi
+![](#tab-glm-clusters-activeVSsham-reward-roi)
+```
 
