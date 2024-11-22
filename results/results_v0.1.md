@@ -53,12 +53,13 @@ Group-level analysis of the active neurofeedback runs.
 Group-level analysis of the sham neurofeedback runs.
 ```
 
+### Localizer
+
 ```{figure} #fig-glm-group-loc-mi
 :label: glm-group-nf-loc-mi
 Group-level analysis of the localizer runs contrasting Motor Imagery with Rest.
 ```
 
-### Localizer
 ```{figure} #fig-glm-group-loc-music
 :label: glm-group-nf-loc-music
 Group-level analysis of the localizer runs contrasting Music with Noise.
