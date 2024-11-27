@@ -117,3 +117,32 @@ def parse_prt_file(file_path):
     conditions_list = list(conditions.keys())
 
     return conditions, conditions_list
+
+
+## Define function to get the sequence, conditions, and durations and export the events TSV file
+def seq2tsv(sequence, conditions, duration_percondition, output_file_path):
+
+    # initialize
+    onsets = []
+    durations = []
+    trial_type = []
+
+    # build onsets, durations, and trial_type lists
+    currentTime = 0
+    for ii in range(len(sequence)):
+        onsets.append(currentTime)
+        durations.append(duration_percondition[sequence[ii]])
+        trial_type.append(conditions[sequence[ii]])
+        currentTime += durations[sequence[ii]]
+
+    # create events dataframe
+    events = pd.DataFrame(
+        {
+            "onset": onsets,
+            "duration": durations,
+            "trial_type": trial_type,
+        }
+    )
+
+    # save events dataframe to file
+    events.to_csv(output_file_path, sep="\t", index=False)
