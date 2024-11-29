@@ -37,24 +37,14 @@ Average correlation timecourses from TurboBV across participants.
 
 
 ## GLM analyses
-### Example design matrix
+
+### Example design matrix for the localizer task
 
 Example design matrix, showing the regressors for motion, physiological signals, CSF, and WM.
 
 ```{figure} sub-01_task-loc_run-1_design-matrix.png
 :label: design-matrix
 Design matrix for the first run of the localizer task.
-```
-
-### Active and Sham neurofeedback runs
-```{figure} #fig-glm-group-nf-active
-:label: glm-group-nf-active
-Group-level analysis of the active neurofeedback runs.
-```
-
-```{figure} #fig-glm-group-nf-sham
-:label: glm-group-nf-sham
-Group-level analysis of the sham neurofeedback runs.
 ```
 
 ### Localizer
@@ -68,6 +58,51 @@ Group-level analysis of the localizer runs contrasting Motor Imagery with Rest.
 :label: glm-group-nf-loc-music
 Group-level analysis of the localizer runs contrasting Music with Noise.
 ```
+
+### Active and Sham neurofeedback runs
+```{figure} #fig-glm-group-nf-active
+:label: glm-group-nf-active
+Group-level analysis of the active neurofeedback runs.
+```
+
+```{figure} #fig-glm-group-nf-sham
+:label: glm-group-nf-sham
+Group-level analysis of the sham neurofeedback runs.
+```
+
+### Active and Sham neurofeedback runs - First part of the block
+```{figure} #fig-glm-group-nf-active-mi1
+:label: glm-group-nf-active-mi1
+Group-level analysis of the active neurofeedback runs - First part of the block.
+```
+
+```{figure} #fig-glm-group-nf-sham-mi1
+:label: glm-group-nf-sham-mi1
+Group-level analysis of the sham neurofeedback runs - First part of the block.
+```
+
+### Active and Sham neurofeedback runs - Second part of the block
+```{figure} #fig-glm-group-nf-active-mi2
+:label: glm-group-nf-active-mi2
+Group-level analysis of the active neurofeedback runs - Second part of the block.
+```
+
+```{figure} #fig-glm-group-nf-sham-mi2
+:label: glm-group-nf-sham-mi2
+Group-level analysis of the sham neurofeedback runs - Second part of the block.
+```
+
+### Active and Sham neurofeedback runs - Comparing first with second part of the block
+```{figure} #fig-glm-group-nf-active-mi1vsmi2
+:label: glm-group-nf-active-mi1vsmi2
+Group-level analysis of the active neurofeedback runs comparing the first and second part of the block.
+```
+
+```{figure} #fig-glm-group-nf-sham-mi1vsmi2
+:label: glm-group-nf-sham-mi1vsmi2
+Group-level analysis of the sham neurofeedback runs comparing the first and second part of the block.
+```
+
 
 ## Comparing Active and Sham neurofeedback GLM maps
 Considered spatial smoothing of 8 mm FWHM. Paired analysis, 22 subjects.
