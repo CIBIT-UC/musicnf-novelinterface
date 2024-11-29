@@ -9,7 +9,14 @@ from nilearn.plotting import plot_design_matrix
 from src.my_settings import settings
 
 
-def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list):
+def firstlevel(
+    settings,
+    task_label,
+    hp_hz,
+    contrast_list,
+    contrast_renamed_list,
+    use_masked_data=False,
+):
     """
     Perform first-level GLM analysis on fMRI data for multiple subjects and runs.
 
@@ -19,6 +26,7 @@ def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list
     - hp_hz (float): High-pass filter cutoff frequency in Hz.
     - contrast_list (list): List of contrasts to be computed.
     - contrast_renamed_list (list): List of renamed contrasts for output filenames.
+    - use_masked_data (bool): If True, use masked data for the analysis. Default is False.
 
     Returns:
     None
@@ -34,6 +42,11 @@ def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list
     7. Computes and saves contrast maps (z-score and effect size) for each contrast.
     """
 
+    if use_masked_data:
+        masked_string = "preprocmasked"
+    else:
+        masked_string = "preproc"
+
     # Iterate over subjects
     for sub_label in settings["sub_labels"]:
 
@@ -46,7 +59,7 @@ def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list
             standardize=False,
             hrf_model="spm",
             drift_model="cosine",
-            slice_time_ref=0.474,  # this value is specific to the acquisition parameters of the dataset
+            slice_time_ref=0.474,  # this value is specific to the acquisition parameters of the dataset. In this case it is the StartTime parameter that can be found in the .json after fmriprep (0.711) divided by the TR (1.5) = 0.474
             high_pass=hp_hz,
         )
 
@@ -61,7 +74,7 @@ def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list
                 settings["derivatives_path"],
                 f"sub-{sub_label}",
                 "func",
-                f"sub-{sub_label}_task-{task_label}_run-{run_label}_space-{settings["space_label"]}_desc-preproc_bold.nii.gz",
+                f"sub-{sub_label}_task-{task_label}_run-{run_label}_space-{settings["space_label"]}_desc-{masked_string}_bold.nii.gz",
             )
 
             events_tsv = os.path.join(
@@ -75,8 +88,8 @@ def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list
             events = pd.read_csv(events_tsv, sep="\t")
 
             # delete Discard and RestFinal rows
-            events = events[events["trial_type"] != "Discard"]
-            events = events[events["trial_type"] != "RestFinal"]
+            # events = events[events["trial_type"] != "Discard"]
+            # events = events[events["trial_type"] != "RestFinal"]
 
             confounds_tsv = os.path.join(
                 settings["derivatives_path"],
@@ -146,7 +159,10 @@ def firstlevel(settings, task_label, hp_hz, contrast_list, contrast_renamed_list
 
         # estimate contrast maps
         for ii in range(len(contrast_list)):
-            maps = fmri_glm.compute_contrast(contrast_list[ii], output_type="all")
+
+            # repeat the contrast for the number of runs just to avoid the warning
+            c_list = [contrast_list[ii]] * len(settings["run_labels"])
+            maps = fmri_glm.compute_contrast(c_list, output_type="all")
 
             maps["z_score"].to_filename(
                 os.path.join(

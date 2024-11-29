@@ -4,9 +4,50 @@ import pandas as pd
 from nilearn.image import math_img
 
 
+def apply_mask(image_path, mask_path):
+    """
+    Apply a binary mask to a NIfTI image using FSL's fslmaths tool.
+
+    Parameters:
+    - image_path (str): Path to the input NIfTI image file.
+    - mask_path (str): Path to the binary mask NIfTI image file.
+
+    Returns:
+    - out_path (str): Path to the output masked NIfTI image file.
+
+    This function performs the following steps:
+    1. Constructs the output file path by appending '_masked' to the input image file name.
+    2. Constructs the fslmaths command to apply the mask to the input image.
+    3. Executes the fslmaths command using the os.system function.
+    4. Returns the path to the output masked image file.
+
+    Example:
+    >>> masked_image = apply_mask("subject01.nii.gz", "mask.nii.gz")
+    >>> print(masked_image)
+    "subject01_masked.nii.gz"
+    """
+    out_path = image_path.replace("_bold.nii.gz", "masked_bold.nii.gz")
+    cmd = f"fslmaths {image_path} -mas {mask_path} {out_path}"
+    os.system(cmd)
+    return out_path
+
+
 def generate_brainnetome_mask(
     bn_path, roi_string, export_flag=False, output_name="brainnetome_mask"
 ):
+    """
+    Generates a brain mask from the Brainnetome Atlas based on a region of interest (ROI) string.
+
+    Parameters:
+    bn_path (str): The file path to the Brainnetome Atlas directory.
+    roi_string (str): The string to search for in the atlas labels to identify regions of interest.
+    export_flag (bool, optional): If True, the generated mask will be saved to a file. Default is False.
+    output_name (str, optional): The name of the output file if export_flag is True. Default is "brainnetome_mask".
+
+    Returns:
+    nibabel.Nifti1Image: The generated brain mask as a Nifti image.
+    """
+
     atlas = os.path.join(bn_path, "BN_Atlas_246_1mm.nii.gz")
     atlas_labels = os.path.join(bn_path, "BN_Atlas_Labels_cleaned.tsv")
 
