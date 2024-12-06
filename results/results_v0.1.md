@@ -199,10 +199,4 @@ Glm activation results comparing the active music and visual interfaces.
 ![](#tab-musicVSvisual-glm-clusters)
 ```
 
-## Comparing the first half with the second half of the neurofeedback runs
-
-```{figure} #fig-glm-group-nf-onevstwo
-:label: glm-group-nf-onevstwo
-GLM activation results comparing the first and second half of the imagery runs (active NF).
-```
 
