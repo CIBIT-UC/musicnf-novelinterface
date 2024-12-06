@@ -14,7 +14,7 @@ Reports performed during the localizer run regarding how pleasant/unpleasant eac
 Participants' ratings of the pleasantness of each chord during the localizer run.
 ```
 
-Participants answered the POMS questionnaire immediately before and after the MRI neurofeedback session. The results are shown in the following figure. The statistical comparison between the pre- and post- POMS scores was performed using a Wilcoxon signed-rank test (paired samples).
+Participants answered the POMS questionnaire immediately before and after the MRI neurofeedback session. The results are shown in the following figure. The statistical comparison between the pre- and post- POMS scores was performed using a Wilcoxon signed-rank test (paired samples) with Holm-Bonferroni correction (p=0.05).
 
 ```{figure} #fig:behav-poms
 :label: behav-poms
