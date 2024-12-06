@@ -9,7 +9,7 @@ from src.utils import generate_brainnetome_mask
 import nibabel as nib
 
 
-def extract_imagery_time_courses(subject, task, run, roi_string):
+def extract_imagery_time_courses(subject, task, run, roi_string, n_timepoints):
     # Load settings
     sett = settings()
 
@@ -18,7 +18,7 @@ def extract_imagery_time_courses(subject, task, run, roi_string):
         sett["derivatives_path"],
         f"sub-{subject}",
         "func",
-        f"sub-{subject}_task-{task}_run-{run}_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz",
+        f"sub-{subject}_task-{task}_run-{run}_space-MNI152NLin2009cAsym_desc-preprocmasked_bold.nii.gz",
     )
     confounds_path = os.path.join(
         sett["derivatives_path"],
@@ -39,28 +39,43 @@ def extract_imagery_time_courses(subject, task, run, roi_string):
         f"sub-{subject}_task-{task}_stat-z_con-MotorImageryMinusRest.nii.gz",
     )
 
+    # Check if all files exist
+    if not os.path.exists(func_img_path):
+        print(f"File not found: {func_img_path}")
+        return np.full((1, n_timepoints), np.nan)
+    if not os.path.exists(confounds_path):
+        print(f"File not found: {confounds_path}")
+        return np.full((1, n_timepoints), np.nan)
+    if not os.path.exists(events_file):
+        print(f"File not found: {events_file}")
+        return np.full((1, n_timepoints), np.nan)
+    if not os.path.exists(glm_img_path):
+        print(f"File not found: {glm_img_path}")
+        return np.full((1, n_timepoints), np.nan)
+
     # Mask generation and resampling
     mask = generate_brainnetome_mask(
         os.path.join(sett["git_path"], "data", "brainnetome"), roi_string=roi_string
     )
     mask_resampled = resample_to_img(mask, func_img_path, interpolation="nearest")
-    z_map = nib.load(glm_img_path)
-    z_map_resampled = resample_img(
-        z_map,
-        target_affine=mask_resampled.affine,
-        target_shape=mask_resampled.shape,
-        interpolation="nearest",
-    )
-    thres = 3.1
-    mask_1 = NiftiMasker(mask_img=mask_resampled)
-    z_data_masked = mask_1.fit_transform(z_map_resampled)
-    binary_mask_data = (z_data_masked > thres).astype(int)
-    binary_mask_img = mask_1.inverse_transform(binary_mask_data)
+
+    # z_map = nib.load(glm_img_path)
+    # z_map_resampled = resample_img(
+    #     z_map,
+    #     target_affine=mask_resampled.affine,
+    #     target_shape=mask_resampled.shape,
+    #     interpolation="nearest",
+    # )
+    # thres = 3.1
+    # mask_1 = NiftiMasker(mask_img=mask_resampled)
+    # z_data_masked = mask_1.fit_transform(z_map_resampled)
+    # binary_mask_data = (z_data_masked > thres).astype(np.int32)
+    # binary_mask_img = mask_1.inverse_transform(binary_mask_data)
 
     # check if binary mask is empty - if so, return NaN array
-    if np.sum(binary_mask_data) == 0:
-        print(f"Empty mask for {subject} {task} {run}")
-        return np.full((1, 20), np.nan)
+    # if np.sum(binary_mask_data) == 0:
+    #     print(f"Empty mask for {subject} {task} {run}")
+    #     return np.full((1, 20), np.nan)
 
     # Load confounds
     confounds = pd.read_csv(confounds_path, sep="\t")
@@ -86,19 +101,17 @@ def extract_imagery_time_courses(subject, task, run, roi_string):
     events["onset_volume"] = (events["onset"] / sett["tr"]).astype(int)
     events["duration_volume"] = (events["duration"] / sett["tr"]).astype(int)
 
-    # Get rest volumes
+    # Get all the rest volumes in a single array
     rest_volumes = np.concatenate(
         [
-            np.arange(
-                row["onset_volume"] + 3, row["onset_volume"] + row["duration_volume"]
-            )
+            np.arange(row["onset_volume"], row["onset_volume"] + row["duration_volume"])
             for _, row in events[events["trial_type"] == "Rest"].iterrows()
         ]
     )
 
     # Get time course of mask image
     masker = NiftiMasker(
-        mask_img=binary_mask_img, confounds=confounds, high_pass=0.008, t_r=sett["tr"]
+        mask_img=mask_resampled, confounds=confounds, high_pass=0.008, t_r=sett["tr"]
     )
     voxel_tcs = masker.fit_transform(func_img_path)
 
@@ -108,14 +121,23 @@ def extract_imagery_time_courses(subject, task, run, roi_string):
     signal_change_avg = signal_change.mean(axis=1)
 
     # Get imagery volumes
-    imagery_volumes = [
+    imagery_one_volumes = [
         np.arange(row["onset_volume"], row["onset_volume"] + row["duration_volume"])
-        for _, row in events[events["trial_type"] == "MotorImagery"].iterrows()
+        for _, row in events[events["trial_type"] == "MotorImageryOne"].iterrows()
+    ]
+    imagery_two_volumes = [
+        np.arange(row["onset_volume"], row["onset_volume"] + row["duration_volume"])
+        for _, row in events[events["trial_type"] == "MotorImageryTwo"].iterrows()
     ]
 
     # Compute imagery time courses
-    imagery_tcs = np.zeros((len(imagery_volumes), 20))
-    for i, volumes in enumerate(imagery_volumes):
-        imagery_tcs[i, : len(volumes)] = signal_change_avg[volumes]
+    imagery_one_tcs = np.zeros((len(imagery_one_volumes), n_timepoints))
+    imagery_two_tcs = np.zeros((len(imagery_two_volumes), n_timepoints))
 
-    return imagery_tcs
+    for i, volumes in enumerate(imagery_one_volumes):
+        imagery_one_tcs[i, : len(volumes)] = signal_change_avg[volumes]
+
+    for i, volumes in enumerate(imagery_two_volumes):
+        imagery_two_tcs[i, : len(volumes)] = signal_change_avg[volumes]
+
+    return imagery_one_tcs, imagery_two_tcs
