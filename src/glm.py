@@ -55,12 +55,15 @@ def firstlevel(
         # define first level model
         model = FirstLevelModel(
             t_r=settings["tr"],
-            noise_model="ar2",
-            standardize=False,
-            hrf_model="spm",
+            noise_model="ar1",
+            hrf_model="glover",
             drift_model="cosine",
             slice_time_ref=0.474,  # this value is specific to the acquisition parameters of the dataset. In this case it is the StartTime parameter that can be found in the .json after fmriprep (0.711) divided by the TR (1.5) = 0.474
             high_pass=hp_hz,
+            subject_label=sub_label,
+            smoothing_fwhm=4,
+            n_jobs=2,
+            verbose=2,
         )
 
         func_img_list = []
@@ -87,9 +90,10 @@ def firstlevel(
             # load as pandas dataframe
             events = pd.read_csv(events_tsv, sep="\t")
 
-            # delete Discard and RestFinal rows
+            # delete Rest and RestFinal rows
             # events = events[events["trial_type"] != "Discard"]
-            # events = events[events["trial_type"] != "RestFinal"]
+            events = events[events["trial_type"] != "Rest"]
+            events = events[events["trial_type"] != "RestFinal"]
 
             confounds_tsv = os.path.join(
                 settings["derivatives_path"],

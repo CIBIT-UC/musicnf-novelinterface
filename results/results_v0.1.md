@@ -39,6 +39,15 @@ For the last three subjects, I saved the signal that was used to provide feedbac
 Average values of interhemispheric correlation that were used to create the feedback signal.
 ```
 
+## Interesting references
+
+Broca, IFG Operculum
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6872088/
+
+https://www.sciencedirect.com/science/article/pii/S0278262620302542
+
+
 
 
 ## GLM analyses
