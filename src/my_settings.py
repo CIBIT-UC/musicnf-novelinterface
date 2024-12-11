@@ -72,7 +72,7 @@ def settings():
         "/Volumes/T7/BIDS-MUSICNF/derivatives/nilearn-glm-group"
     )
     settings["git_path"] = "/Users/alexandresayal/GitHub/musicnf-novelinterface"
-    settings["space_label"] = "MNI152NLin2009cAsym"
+    settings["space_label"] = "_space-MNI152NLin2009cAsym"
     settings["sub_labels"] = sub_labels
     settings["run_labels"] = run_labels
     settings["tr"] = 1.5

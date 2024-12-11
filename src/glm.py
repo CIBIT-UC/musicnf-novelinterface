@@ -56,14 +56,17 @@ def firstlevel(
         model = FirstLevelModel(
             t_r=settings["tr"],
             noise_model="ar1",
-            hrf_model="glover",
+            hrf_model="spm",
             drift_model="cosine",
             slice_time_ref=0.474,  # this value is specific to the acquisition parameters of the dataset. In this case it is the StartTime parameter that can be found in the .json after fmriprep (0.711) divided by the TR (1.5) = 0.474
             high_pass=hp_hz,
             subject_label=sub_label,
             smoothing_fwhm=4,
-            n_jobs=2,
-            verbose=2,
+            standardize=False,
+            minimize_memory=True,
+            memory=os.path.join(settings["git_path"], "data", "nilearn_mem"),
+            n_jobs=4,
+            verbose=1,
         )
 
         func_img_list = []
@@ -77,7 +80,7 @@ def firstlevel(
                 settings["derivatives_path"],
                 f"sub-{sub_label}",
                 "func",
-                f"sub-{sub_label}_task-{task_label}_run-{run_label}_space-{settings["space_label"]}_desc-{masked_string}_bold.nii.gz",
+                f"sub-{sub_label}_task-{task_label}_run-{run_label}{settings["space_label"]}_desc-{masked_string}_bold.nii.gz",
             )
 
             events_tsv = os.path.join(
@@ -141,7 +144,7 @@ def firstlevel(
                 confounds = pd.concat([confounds, physio], axis=1)
 
             # normalize all confounds to have mean 0 and std 1
-            confounds = (confounds - confounds.mean()) / confounds.std()
+            # confounds = (confounds - confounds.mean()) / confounds.std()
 
             # append to lists
             func_img_list.append(func_img)
@@ -171,13 +174,13 @@ def firstlevel(
             maps["z_score"].to_filename(
                 os.path.join(
                     settings["out_glm_path"],
-                    f"sub-{sub_label}_task-{task_label}_stat-z_con-{contrast_renamed_list[ii]}.nii.gz",
+                    f"sub-{sub_label}_task-{task_label}{settings["space_label"]}_stat-z_con-{contrast_renamed_list[ii]}.nii.gz",
                 )
             )
             maps["effect_size"].to_filename(
                 os.path.join(
                     settings["out_glm_path"],
-                    f"sub-{sub_label}_task-{task_label}_stat-beta_con-{contrast_renamed_list[ii]}.nii.gz",
+                    f"sub-{sub_label}_task-{task_label}{settings["space_label"]}_stat-beta_con-{contrast_renamed_list[ii]}.nii.gz",
                 )
             )
 
@@ -211,7 +214,7 @@ def secondlevel(settings, task_label, contrast_renamed_list):
         zmap_files = glob.glob(
             os.path.join(
                 settings["out_glm_path"],
-                f"sub-*_task-{task_label}_stat-z_con-{contrast_name}.nii.gz",
+                f"sub-*_task-{task_label}{settings["space_label"]}_stat-z_con-{contrast_name}.nii.gz",
             )
         )
         zmap_files.sort()
@@ -243,7 +246,7 @@ def secondlevel(settings, task_label, contrast_renamed_list):
         z_map_g.to_filename(
             os.path.join(
                 settings["out_glm_group_path"],
-                f"group_task-{task_label}_stat-z_con-{contrast_name}.nii.gz",
+                f"group_task-{task_label}{settings["space_label"]}_stat-z_con-{contrast_name}.nii.gz",
             )
         )
 

@@ -26,3 +26,10 @@ CIBIT, University of Coimbra, Portugal
 - [] Fetch stats from Reward network
 - [] The role of the insula (cognitive control, conflicting - artigo Rebola 2012)
 - [] Music vs. Noise (Localizer) vs. MI vs. Rest (NF) - contraste 2nd level
+- [] Paired t-test between active and sham runs instead of 2nd level analysis
+- [] Unpaired 2nd level
+  - [] Motor Imagery One
+  - [] Motor Imagery One vs. Two
+- [x] Corrigir testes do POMS
+- [x] Considerar beta do increase e não do contraste increased > baseline - na interhemispheric a baseline era downregulation ativa
+- [ ] Plots com três linhas por participante: Left BOLD, Right BOLD, Windowed Correlation

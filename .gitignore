@@ -2,3 +2,4 @@
 *.DS_Store
 # MyST build outputs
 _build
+data/nilearn_mem
