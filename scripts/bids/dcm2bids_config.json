@@ -1,0 +1,132 @@
+{
+    "descriptions": [
+        {
+            "datatype": "anat",
+            "suffix": "T1w",
+            "criteria": {
+                "SeriesDescription": "*t1_mprage*"
+            },
+            "sidecar_changes": {
+                "ProtocolName": "T1w"
+            }
+        },
+        {
+            "datatype": "anat",
+            "suffix": "T2w",
+            "criteria": {
+                "SeriesDescription": "*t2_space*"
+            },
+            "sidecar_changes": {
+                "ProtocolName": "T2w"
+            }
+        },
+        {
+            "id": "task_loc",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-loc_run-1",
+            "criteria": {
+                "ProtocolName": "Loc_Run1_AP"
+            },
+            "sidecar_changes": {
+                "TaskName": "Localizer"
+            }
+        },
+        {
+            "id": "task_nf_1",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-nf_run-1",
+            "criteria": {
+                "ProtocolName": "Active_NF_Run1_AP"
+            },
+            "sidecar_changes": {
+                "TaskName": "Active NF"
+            }
+        },
+        {
+            "id": "task_nf_2",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-nf_run-2",
+            "criteria": {
+                "ProtocolName": "Active_NF_Run2_AP"
+            },
+            "sidecar_changes": {
+                "TaskName": "Active NF"
+            }
+        },
+        {
+            "id": "task_sham_1",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-sham_run-1",
+            "criteria": {
+                "ProtocolName": "Sham_NF_Run1_AP"
+            },
+            "sidecar_changes": {
+                "TaskName": "Sham NF"
+            }
+        },
+        {
+            "id": "task_sham_2",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-sham_run-2",
+            "criteria": {
+                "ProtocolName": "Sham_NF_Run2_AP"
+            },
+            "sidecar_changes": {
+                "TaskName": "Sham NF"
+            }
+        },
+        {
+            "datatype": "fmap",
+            "suffix": "magnitude1",
+            "criteria": {
+                "ProtocolName": "*gre_field_mapping*",
+                "ImageType": ["ORIGINAL", "PRIMARY", "M", "NONE", "MAGNITUDE"],
+                "EchoNumber": 1
+            },
+            "sidecar_changes": {
+                "IntendedFor": ["task_nf_1", "task_nf_2", "task_sham_1", "task_sham_2"]
+            }
+        },
+        {
+            "datatype": "fmap",
+            "suffix": "magnitude2",
+            "criteria": {
+                "ProtocolName": "*gre_field_mapping*",
+                "ImageType": ["ORIGINAL", "PRIMARY", "M", "NONE", "MAGNITUDE"],
+                "EchoNumber": 2
+            },
+            "sidecar_changes": {
+                "IntendedFor": ["task_nf_1", "task_nf_2", "task_sham_1", "task_sham_2"]
+            }
+        },
+        {
+            "datatype": "fmap",
+            "suffix": "phasediff",
+            "criteria": {
+                "ProtocolName": "*gre_field_mapping*",
+                "ImageType": ["ORIGINAL", "PRIMARY", "P", "NONE", "PHASE"]
+            },
+            "sidecar_changes": {
+                "IntendedFor": ["task_nf_1", "task_nf_2", "task_sham_1", "task_sham_2"],
+                "B0FieldIdentifier": "phasediff_fmap0"
+            }
+        },
+        {
+            "id": "task_locimg",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-locimg_run-1",
+            "criteria": {
+                "ProtocolName": "Active_LOC"
+            },
+            "sidecar_changes": {
+                "TaskName": "Localizer with Feedback"
+            }
+        }
+    ]
+}
