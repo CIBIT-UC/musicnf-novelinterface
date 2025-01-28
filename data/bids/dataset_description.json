@@ -1,0 +1,22 @@
+{
+    "Name": "A novel interface for rt-fMRI neurofeedback using music",
+    "BIDSVersion": "v1.9.0",
+    "License": "Creative Commons Attribution 4.0 International",
+    "Authors": [
+        "Alexandre Sayal",
+        "João Pereira",
+        "Teresa Sousa",
+        "Bruno Direito",
+        "Miguel Castelo-Branco"
+    ],
+    "Acknowledgments": "",
+    "HowToAcknowledge": "",
+    "Funding": [
+        ""
+    ],
+    "ReferencesAndLinks": [
+        "https://github.com/CIBIT-UC/musicnf-novelinterface"
+    ],
+    "DatasetDOI": "10.5281/zenodo.14727261"
+}
+

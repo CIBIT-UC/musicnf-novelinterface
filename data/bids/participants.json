@@ -1,0 +1,39 @@
+{
+    "age": {
+        "LongName": "",
+        "Description": "age of the participant",
+        "Units": "years"
+    },
+    "sex": {
+        "LongName": "",
+        "Description": "sex of the participant as reported by the participant",
+        "Levels": {
+            "M": "male",
+            "F": "female"
+        }
+    },
+    "mini_proms": {
+        "LongName": "",
+        "Description": "Total score of the Mini-PROMS questionnaire"
+    },
+    "MIQ3_Internal": {
+        "LongName": "",
+        "Description": "Internal score of the MIQ3 questionnaire"
+    },
+    "MIQ3_External": {
+        "LongName": "",
+        "Description": "External score of the MIQ3 questionnaire"
+    },
+    "MIQ3_CInes": {
+        "LongName": "",
+        "Description": "Kinesthetic score of the MIQ3 questionnaire"
+    },
+    "Handedness_LI": {
+        "LongName": "",
+        "Description": "Laterality index of the handedness of the participant"
+    },
+    "Augmented_LI": {
+        "LongName": "",
+        "Description": "Augmented Laterality index of the handedness of the participant"
+    }
+}
