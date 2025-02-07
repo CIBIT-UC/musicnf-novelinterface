@@ -55,14 +55,14 @@ def firstlevel(
         # define first level model
         model = FirstLevelModel(
             t_r=settings["tr"],
-            noise_model="ar1",
+            noise_model="ar2",
             hrf_model="spm",
             drift_model="cosine",
             slice_time_ref=0.474,  # this value is specific to the acquisition parameters of the dataset. In this case it is the StartTime parameter that can be found in the .json after fmriprep (0.711) divided by the TR (1.5) = 0.474
             high_pass=hp_hz,
             subject_label=sub_label,
-            smoothing_fwhm=4,
-            standardize=False,
+            smoothing_fwhm=None,
+            standardize=True,
             minimize_memory=True,
             memory=os.path.join(settings["git_path"], "data", "nilearn_mem"),
             n_jobs=4,
@@ -229,7 +229,7 @@ def secondlevel(settings, task_label, contrast_renamed_list):
         )
 
         # define 2nd level model
-        second_level_model = SecondLevelModel(smoothing_fwhm=8.0, n_jobs=3)
+        second_level_model = SecondLevelModel(smoothing_fwhm=6.0, n_jobs=3)
 
         second_level_model = second_level_model.fit(
             zmap_files,
