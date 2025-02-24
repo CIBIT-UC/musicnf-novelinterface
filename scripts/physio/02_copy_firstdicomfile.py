@@ -54,7 +54,6 @@ task_list = [
 
 # copy the first file in the folder dicom_folder/task to output_folder with the name subname_task-taskname_run-1_firstvol.dcm
 for task in protocol_task_list:
-
     # find the correct folder
     task_folder = [folder for folder in folders if task in folder]
 

@@ -1,4 +1,5 @@
 import os
+
 import numpy as np
 import pandas as pd
 from nilearn.image import math_img
@@ -162,7 +163,6 @@ def parse_prt_file(file_path):
 
 ## Define function to get the sequence, conditions, and durations and export the events TSV file
 def seq2tsv(sequence, conditions, duration_percondition, output_file_path):
-
     # initialize
     onsets = []
     durations = []

@@ -1,13 +1,13 @@
 import os
-import pandas as pd
+
 import numpy as np
+import pandas as pd
 from nilearn.image import resample_to_img
 from nilearn.maskers import NiftiMasker, NiftiSpheresMasker
-from nilearn.image import resample_img
+from scipy.stats import pearsonr
+
 from src.my_settings import settings
 from src.utils import generate_brainnetome_mask
-import nibabel as nib
-from scipy.stats import pearsonr
 
 # Load settings
 sett = settings()
@@ -24,7 +24,6 @@ def extract_era_corr_sphere(
     window_size_online=8,
     window_size_offline=4,
 ):
-
     masker = NiftiSpheresMasker(
         pmc_coords,
         radius=6,
@@ -44,7 +43,7 @@ def extract_era_corr_sphere(
         sett["derivatives_path"],
         f"sub-{sub_label}",
         "func",
-        f"sub-{sub_label}_task-{task_label}_run-{run_label}{sett["space_label"]}_desc-preproc_bold.nii.gz",
+        f"sub-{sub_label}_task-{task_label}_run-{run_label}{sett['space_label']}_desc-preproc_bold.nii.gz",
     )
 
     confounds_tsv = os.path.join(
@@ -160,10 +159,8 @@ def extract_era_corr_sphere(
 
     # iterate on the trials
     for i in range(len(imagery_volumes)):
-
         # iterate on the imagery volumes
         for j in range(len(imagery_volumes[0])):
-
             # set the window in volumes
             this_window_online = np.arange(
                 imagery_volumes[i][j] - window_size_online, imagery_volumes[i][j]
@@ -193,7 +190,6 @@ def extract_era_corr_sphere(
 
 
 def extract_imagery_time_courses(subject, task, run, roi_string, n_timepoints):
-
     # Paths
     func_img_path = os.path.join(
         sett["derivatives_path"],

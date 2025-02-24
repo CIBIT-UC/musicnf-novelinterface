@@ -1,12 +1,11 @@
 # Imports
-import os
 import glob
-import numpy as np
+import os
+
 import pandas as pd
 from nilearn.glm.first_level import FirstLevelModel
 from nilearn.glm.second_level import SecondLevelModel
 from nilearn.plotting import plot_design_matrix
-from src.my_settings import settings
 
 
 def firstlevel(
@@ -49,7 +48,6 @@ def firstlevel(
 
     # Iterate over subjects
     for sub_label in settings["sub_labels"]:
-
         print(f"Processing subject {sub_label}")
 
         # define first level model
@@ -75,12 +73,11 @@ def firstlevel(
 
         # Iterate on the runs
         for run_label in settings["run_labels"]:
-
             func_img = os.path.join(
                 settings["derivatives_path"],
                 f"sub-{sub_label}",
                 "func",
-                f"sub-{sub_label}_task-{task_label}_run-{run_label}{settings["space_label"]}_desc-{masked_string}_bold.nii.gz",
+                f"sub-{sub_label}_task-{task_label}_run-{run_label}{settings['space_label']}_desc-{masked_string}_bold.nii.gz",
             )
 
             events_tsv = os.path.join(
@@ -166,7 +163,6 @@ def firstlevel(
 
         # estimate contrast maps
         for ii in range(len(contrast_list)):
-
             # repeat the contrast for the number of runs just to avoid the warning
             c_list = [contrast_list[ii]] * len(settings["run_labels"])
             maps = fmri_glm.compute_contrast(c_list, output_type="all")
@@ -174,13 +170,13 @@ def firstlevel(
             maps["z_score"].to_filename(
                 os.path.join(
                     settings["out_glm_path"],
-                    f"sub-{sub_label}_task-{task_label}{settings["space_label"]}_stat-z_con-{contrast_renamed_list[ii]}.nii.gz",
+                    f"sub-{sub_label}_task-{task_label}{settings['space_label']}_stat-z_con-{contrast_renamed_list[ii]}.nii.gz",
                 )
             )
             maps["effect_size"].to_filename(
                 os.path.join(
                     settings["out_glm_path"],
-                    f"sub-{sub_label}_task-{task_label}{settings["space_label"]}_stat-beta_con-{contrast_renamed_list[ii]}.nii.gz",
+                    f"sub-{sub_label}_task-{task_label}{settings['space_label']}_stat-beta_con-{contrast_renamed_list[ii]}.nii.gz",
                 )
             )
 
@@ -207,14 +203,13 @@ def secondlevel(settings, task_label, contrast_renamed_list):
     """
     # Iterate on the contrast list
     for contrast_name in contrast_renamed_list:
-
         print(f"Running 2nd level for contrast {contrast_name}")
 
         # List all zmap nii.gz files
         zmap_files = glob.glob(
             os.path.join(
                 settings["out_glm_path"],
-                f"sub-*_task-{task_label}{settings["space_label"]}_stat-z_con-{contrast_name}.nii.gz",
+                f"sub-*_task-{task_label}{settings['space_label']}_stat-z_con-{contrast_name}.nii.gz",
             )
         )
         zmap_files.sort()
@@ -246,7 +241,7 @@ def secondlevel(settings, task_label, contrast_renamed_list):
         z_map_g.to_filename(
             os.path.join(
                 settings["out_glm_group_path"],
-                f"group_task-{task_label}{settings["space_label"]}_stat-z_con-{contrast_name}.nii.gz",
+                f"group_task-{task_label}{settings['space_label']}_stat-z_con-{contrast_name}.nii.gz",
             )
         )
 

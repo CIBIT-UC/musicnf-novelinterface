@@ -37,7 +37,6 @@ files = [file for file in files if not file.startswith(".")]
 
 # loop through all files
 for file in files:
-
     # check if the file is a .tsv file
     if file.endswith("AC1.puls") or file.endswith("ACT1.puls"):
         # rename to subname_task-nf_run-1.puls
