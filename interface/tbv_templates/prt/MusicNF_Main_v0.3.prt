@@ -1,0 +1,47 @@
+
+FileVersion:		2 
+
+ResolutionOfTime:	Volumes 
+
+Experiment:			MusicNF_Main 
+
+BackgroundColor:	0  0  0 
+TextColor:			255  255  255 
+
+TimeCourseColor:	1  1  1 
+TimeCourseThick:	3 
+ReferenceFuncColor:	0   0  80 
+ReferenceFuncThick:	2 
+
+NrOfConditions:		4 
+ 
+Discard 
+1 
+1	8 
+Color:	0 115 190 
+
+Rest 
+6 
+9	28 
+49	68 
+89	108 
+129	148 
+169	188 
+209	228 
+Color:	216 83 25 
+
+MotorImagery 
+6 
+29	48 
+69	88 
+109	128 
+149	168 
+189	208 
+229	248 
+Color:	236 177 32 
+
+RestFinal 
+1 
+249	256 
+Color:	110 115 190 
+

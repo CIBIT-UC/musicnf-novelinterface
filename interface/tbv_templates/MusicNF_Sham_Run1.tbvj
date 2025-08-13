@@ -1,0 +1,73 @@
+{
+    "DataFormatInfo": {
+        "DataType": "SIEMENS_DICOM_MULTIFRAME",
+        "DicomFirstImageNr": 1,
+        "DicomFirstVolumeNr": 10,
+        "DicomNameDelimiter": "_",
+        "DicomNameExtension": "dcm",
+        "FirstFileName": "001_000010_000001_[unique].dcm",
+        "FlipSliceOrderFuncData": true,
+        "GapThickness": 0.49,
+        "InplaneFoVX": 210,
+        "InplaneFoVY": 210,
+        "MatrixSizeX": 70,
+        "MatrixSizeY": 70,
+        "NrOfColumns": 6,
+        "NrOfRows": 6,
+        "NrOfSlices": 26,
+        "SliceThickness": 3.5
+    },
+    "DefaultBrightnessFunc": 40,
+    "DefaultContrastFunc": 50,
+    "FoldersInfo": {
+        "FeedbackTargetFolder": "./FeedbackFolder/",
+        "TargetFolder": "./TargetFolder/",
+        "WatchFolder": "Y:/"
+    },
+    "ForceTRDelay": false,
+    "InplaneOverlayInfo": {
+        "OverlayInplaneData": false,
+        "OverlayOnCurrentEPI": true,
+        "ShowEPIAfterSpatialPP": true
+    },
+    "OverlaySRFInfo": {
+        "OverlayOnSRFMode": 0
+    },
+    "OverlayVMRInfo": {
+        "FlipSliceOrderInVolumeView": true,
+        "IncludeFAStepForFMVMRCoreg": false,
+        "OverlayMapsOnVMRBackground": true,
+        "OverlayOnVMRMode": 0
+    },
+    "RawDataBigEndian": 0,
+    "ShowGODlgAfterPreparation": false,
+    "StatisticsInfo": {
+        "AddMotionParamsToDM": true,
+        "AutoContrastGenerationLevel": 2,
+        "ClusterSizePixels": 4,
+        "ContrastFile": "",
+        "DriftConfoundPredictors": 1,
+        "IntraSessionMotionCorrection": true,
+        "IntraSessionMotionCorrectionFile": "./TargetFolder/MusicNF_Localizer.fmr"
+        "MotionCorrection": true,
+        "MotionCorrectionWithSincResampling": false,
+        "SpatialGaussianSmoothing": true,
+        "SpatialSmoothingFWHM": 4,
+        "Threshold": 3
+    },
+    "TimeCourseInfo": {
+        "InterSliceTime": 66,
+        "MultiSliceROISelection": 5,
+        "NrOfVolumes": 256,
+        "NrOfVolumesToSkip": 8,
+        "ProjectName": "MusicNF_Sham_Run1",
+        "ROIColorsFile": "K:/TBVData/TBV_teste3/ROISelectionColors.rcd",
+        "ShowDetrendedTCs": true,
+        "SphereRadiusSelection": 3,
+        "StimulationProtocol": "./prt/MusicNF_Main_v0.3_PostDiscard.prt",
+        "TR": 1500
+    },
+    "TimeOutSeconds": 60,
+    "Title": "MusicNF_Sham_Run1",
+    "Version": 6
+}
